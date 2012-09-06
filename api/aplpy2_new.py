@@ -99,6 +99,16 @@ ax.grid(system='fk5')
 ax.grid(system='fk5')
 ax.grid(system='galactic')
 
+# To change the grid properties, keep a handle to the object:
+
+grid = ax.grid(system='fk5')
+grid.set_color('red')
+grid.set_alpha(0.5)
+
+# or pass them at initialization:
+
+ax.grid(system='fk5', color='red', alpha=0.5)
+
 # Axis labels
 # -----------
 #
@@ -164,6 +174,17 @@ ax.beam()
 # And if the header keywords are not availbale:
 
 ax.beam(major=0.2, minor=0.04, angle=45.)
+
+# To modify the appearance, either pass arguments at initalization
+
+ax.beam(facecolor='none', edgecolor='blue')
+
+# or keep a handle to the object:
+
+beam = ax.beam()
+beam.set_major(0.3)
+beam.set_facecolor('none')
+beam.set_edgecolor('blue')
 
 # To add a compass:
 
