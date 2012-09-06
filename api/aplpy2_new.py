@@ -14,6 +14,12 @@
 # Note that FITSFigure is not defined in the new API, so we can easily leave
 # the old class and methods for backward compatibility initially.
 #
+# Open questions
+# --------------
+#
+# * How does the user change the spacing of ticks?
+# * How do we handle offset plots, e.g. offset from a given position?
+#
 # Initialization
 # --------------
 #
